@@ -1,0 +1,245 @@
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+/* Incepere bara navigare*/
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14.5px;
+  letter-spacing: 1.6px;
+}
+.navbar-nav li {
+  padding-right: 50px;
+}
+.navbar-nav li a /*caracteristici specifice elementelor din meniu*/ {
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.navbar-nav li a:hover {
+  border: 1px solid white;
+
+  background-color: darkred;
+  transition: all 0.5s ease-in;
+}
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+.navbar-toggler {
+  border-color: darkred;
+  border-width: 0.1rem;
+}
+.navbar-toggler:hover {
+  color: darkred;
+  transition: all 0.5s ease-in;
+}
+/*Terminare bara navigare*/
+/*Pagina de intro*/
+.home-inner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(pic1.jpg);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+  cursor: default;
+}
+.btn {
+  animation: bgcolor 5s ease-in-out 0s forwards;
+  transition-duration: 5s;
+}
+.btn:hover {
+  background-color: darkred;
+  transition: all 0.5s ease-in;
+  color: white;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+/*Terminare pagina intro*/
+/* Incepere swiper*/
+
+.swiper-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  background: black;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0005);
+}
+.swiper-slide {
+  height: auto !important;
+  height: 30%;
+  width: 50%;
+}
+
+.swiper-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+.swiper-wrapper {
+  min-height: 100%;
+  min-width: 80%;
+}
+.button2 {
+ margin: 0 auto;
+ position:absolute;
+  margin-top: -45px;
+  margin-left: 140px;
+}
+.btn-one {
+  border: 1px solid white;
+  padding: 10px 10px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 250px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+}
+.btn-one:hover {
+  background-color: darkred;
+  transition: all 0.5s ease-in;
+  color: white;
+  text-decoration: none;
+}
+#slide {
+  background-color: lightgray;
+}
+
+.col-12 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*terminare slide*/
+/*Incepere contact*/
+.jumbotron {
+  background-color: lightgray;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2rem 0 3, 5rem;
+}
+
+h3.heading {
+  cursor: default;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.heading-underline {
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+  width: 100%;
+  height: 0.4rem;
+  background-color: darkred;
+  margin: 0 auto 2rem;
+}
+h3.adresa.secret.director {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.iconite a {
+  color: white;
+}
+.socket {
+  text-align: center;
+}
+.iconite {
+  padding-left: 45%;
+  font-size: 2rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+.iconite a:hover {
+  color: darkred;
+  transition: all 0.5s ease-in;
+}
+/*Terminare contact*/
+
+/*incepere animatie*/
+#animatie {
+  animation: bgcolor 5s ease-in-out 0s forwards;
+}
+@keyframes bgcolor {
+  0% {
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .navbar {
+    background-color: rgba(3, 3, 3, 0.5);
+  }
+  .navbar-toggler {
+    border-color: white;
+    border-width: thin;
+  }
+
+}
+/*Terminare animatie*/
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

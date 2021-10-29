@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Universitatea Tehnica Cluj-Napoca</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.1.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style9.css" />
+    <link rel="stylesheet" href="../css/fixed.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
+  </head>
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="../Page1/index.html"
+        ><img src="../images1/logo_good.png"
+      /></a>
+      <!--Incepere buton meniu hamburger-->
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+      >
+        <span class="navbar-toggler-icon navbar-dark"></span>
+      </button>
+      <!--Terminare buton meniu hamburger-->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">STIRI SI NOUTATI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Page3/index3.html">EDUCATIE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Page6/index7.html"
+              >MATERIALE DIDACTICE</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Page8/index9.html">CERCETARE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Page2/index2.html">PERSONAL</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="m-scene" id="main">
+    <h3 class="heading scene_element scene_element--fadeindown">
+      ITEC
+    </h3>
+    <div
+      class="heading-underline scene_element scene_element--fadeinleft"
+    ></div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../images1/img2.jpg" />
+          <p id="" class=" paragraf2 bottom-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            esse officia soluta ratione molestiae, nihil praesentium recusandae
+            ex excepturi, eos aut repellendus nam sapiente sunt assumenda
+            fugiat! Dolore, animi at.
+          </p>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="../images1/img9.jpg" />
+          <p id="" class=" paragraf2 bottom-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            esse officia soluta ratione molestiae, nihil praesentium recusandae
+            ex excepturi, eos aut repellendus nam sapiente sunt assumenda
+            fugiat! Dolore, animi at.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="../images1/img16.jpg" />
+          <p id="" class="paragraf2 bottom-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            esse officia soluta ratione molestiae, nihil praesentium recusandae
+            ex excepturi, eos aut repellendus nam sapiente sunt assumenda
+            fugiat! Dolore, animi at.
+          </p>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="col-12 text-center">
+      <div class="content scene_element scene_element--fadeinright">
+        <p style="text-align: center;" id="paragraf">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab nisi
+          totam maxime, sequi fuga odio tempora modi expedita quis ducimus! Quam
+          quos ducimus sequi voluptatibus assumenda repellendus temporibus enim!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia.
+          Nihil, quas quo alias at aliquid suscipit vel, veniam illum mollitia
+          dolorum explicabo nostrum nulla ad, quisquam reprehenderit veritatis
+          sit.
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <script src="../js/jquery-3.3.1.min.js"></script>
+     <script src="../bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

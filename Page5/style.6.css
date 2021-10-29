@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+  }
+  .narrow h1 {
+    font-size: 2.4rem;
+  }
+  html {
+    min-height: 100%;
+  }
+  body {
+    background: linear-gradient(0deg, white 50%, lightgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+  }
+  /* Incepere bara navigare*/
+  .navbar {
+    background-color: rgb(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14.5px;
+    letter-spacing: 1.6px;
+  }
+  .navbar-nav li {
+    padding-right: 50px;
+  }
+  .navbar-nav li a /*caracteristici specifice elementelor din meniu*/ {
+    text-shadow: 0.1rem 0.1rem 0.3rem black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  .navbar-nav li a:hover {
+    border: 1px solid white;
+  
+    background-color: darkred;
+    transition: all 0.5s ease-in;
+  }
+  .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+  .navbar-toggler {
+    border-color: darkred;
+    border-width: 0.1rem;
+  }
+  .navbar-toggler:hover {
+    color: darkred;
+    transition: all 0.5s ease-in;
+  }
+
+  div.panel {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+    transition: max-height 0.2s ease-out;
+  }
+  div.panel p {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+  #paragraf {
+    border-style: solid;
+    border-color: darkred;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  h3.heading {
+    text-align: center;
+    cursor: default;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  .heading-underline {
+    text-shadow: 0.1rem 0.1rem 0.4rem black;
+    width: 80%;
+    height: 0.4rem;
+    background-color: darkred;
+    margin: 0 auto 2rem;
+  }
+  .content {
+    margin: auto;
+    width: 80%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper {
+    text-align: center;
+    padding-left: 20px;
+    width: 60%;
+    margin: 10px auto;
+    font-weight: 400;
+  }
+  button:focus {
+    outline: none;
+  }
+  button.accordion {
+    cursor: pointer;
+    background: linear-gradient(to top, darkred, rgb(230, 0, 0));
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    transition: 0.4s;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  button.accordion:active,
+  button.accordion:hover {
+    position: relative;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+    z-index: 3;
+  }
+
+  .m-scene .scene_element{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  
+  }
+  
+    /** Basic styles for an animated element */
+    
+  
+    /** An element that fades in and slides up */
+    .m-scene .scene_element--fadeinup {
+      animation-name: fadeInUp;
+      animation-duration: 1.5s;
+    }
+    .m-scene .scene_element--fadeindown {
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+    }
+    .m-scene .scene_element--fadeinright {
+      animation-name: fadeInRight;
+      animation-duration: 1s;
+    }
+    .m-scene .scene_element--fadeinleft {
+      animation-name: fadeInLeft;
+      animation-duration: 1s;
+    }
+   
+  
+   
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  
+    @keyframes fadeInDown {
+      0% {
+         opacity: 0;
+         transform: translateY(-1000px);
+      }
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   } 
+  
+   @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-1000px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+  }   
+  
+  
+  @media screen and (max-width: 768px) {
+    h3.heading{
+      padding-top: 10%;
+    }
+    .navbar {
+      background-color: rgba(3, 3, 3, 0.5);
+    }
+    .navbar-toggler {
+      border-color: white;
+      border-width: thin;
+    }
+  
+  }
